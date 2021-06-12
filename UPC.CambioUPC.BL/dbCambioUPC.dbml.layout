@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dbCambioUPC">
+  <DataContextMoniker Name="/dbCambioUPCDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fbc69eae-0e34-48e7-bf66-9f34115c191e" absoluteBounds="3.5, 1.125, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/dbCambioUPCDataContext/Tarjeta" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e181fb59-af15-4986-8041-4412a6e9e9f4" absoluteBounds="3.515, 1.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c35bbf53-fe31-4f32-9514-c60b3de1e264" absoluteBounds="0.75, 1.125, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/dbCambioUPCDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2cb9865e-54a8-4b09-8d61-c05e0f867621" absoluteBounds="0.765, 1.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cc3624ed-126f-4ed6-91d4-7243f78c7440" absoluteBounds="3.5, 5.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/dbCambioUPCDataContext/TipoTransaccion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bed594ab-80a5-4d05-a579-6e0c8b1eb20b" absoluteBounds="3.515, 5.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.39505126953125); (3.5 : 2.39505126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbCambioUPCDataContext/Usuario/Usuario_Tarjeta" />
+      <nodes>
+        <classShapeMoniker Id="c35bbf53-fe31-4f32-9514-c60b3de1e264" />
+        <classShapeMoniker Id="fbc69eae-0e34-48e7-bf66-9f34115c191e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2ba66cec-16df-4f0d-9429-714656483dac" absoluteBounds="6.75, 1.125, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/dbCambioUPCDataContext/Transaccion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="65e08a0a-3ea8-49d7-9201-f5ee00051a81" absoluteBounds="6.765, 1.585, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 2.39505126953125); (6.75 : 2.39505126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbCambioUPCDataContext/Tarjeta/Tarjeta_Transaccion" />
+      <nodes>
+        <classShapeMoniker Id="fbc69eae-0e34-48e7-bf66-9f34115c191e" />
+        <classShapeMoniker Id="2ba66cec-16df-4f0d-9429-714656483dac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.45274983723958); (7.75 : 6.45274983723958); (7.75 : 4.04970540364583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbCambioUPCDataContext/TipoTransaccion/TipoTransaccion_Transaccion" />
+      <nodes>
+        <classShapeMoniker Id="cc3624ed-126f-4ed6-91d4-7243f78c7440" />
+        <classShapeMoniker Id="2ba66cec-16df-4f0d-9429-714656483dac" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
